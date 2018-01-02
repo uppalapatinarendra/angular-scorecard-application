@@ -1,0 +1,26 @@
+<a href="#/players">Go Back</a>
+<div class="panel panel-default" ng-init="getPlayer()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{player.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{player.image_url}}">
+      </div>
+      <div class="col-md-8">
+        <p>{{player.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Name: {{player.name}}</li>
+          <li class="list-group-item">Amount: {{player.amount}}</li>
+          <li class="list-group-item">Score: {{player.score}}</li>
+          <li class="list-group-item">Image URL: {{player.image_url}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/players/edit/{{player._id}}">Edit</a> |  <a href="#" ng-click="removePlayer(player._id)">Delete</a>
+  </div>
