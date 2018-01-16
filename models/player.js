@@ -14,8 +14,7 @@ const playerSchema = mongoose.Schema({
 		required: true
 	},
     score:{
-        type: Number,
-        required: true
+        type: Number
     },
 	image_url:{
 		type: String

@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 
-
 Player =require('./models/player');
 
 // Connect to Mongoose
