@@ -1,7 +1,9 @@
 var myApp = angular.module('myApp');
 
-myApp.controller('PlayersController', ['$scope', '$http', '$location', '$routeParams', function($scope, $http, $location, $routeParams){
+myApp.controller('PlayersController', ['$scope', '$http', '$location', '$routeParams','$timeout', function($scope, $http, $location, $routeParams,$timout){
 	console.log('PlayersController loaded...');
+    
+
 
 	$scope.getPlayers = function(){
 		$http.get('/api/players').success(function(response){
