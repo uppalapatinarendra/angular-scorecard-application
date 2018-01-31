@@ -16,6 +16,12 @@ const playerSchema = mongoose.Schema({
     score:{
         type: Number
     },
+    wickets: {
+        type: Number
+    },
+    catches: {
+        type: Number
+    },
 	image_url:{
 		type: String
 	},

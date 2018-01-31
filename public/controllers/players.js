@@ -38,3 +38,6 @@ myApp.controller('PlayersController', ['$scope', '$http', '$location', '$routePa
 		});
 	}
 }]);
+
+
+
